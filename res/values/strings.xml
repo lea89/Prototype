@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">El Plan de la Mariposa</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="eventos">Eventos</string>
+    <string name="videos">Videos</string>
+    <string name="canciones">Canciones</string>
+    <string name="contacto">Contacto</string>
+    <string name="title_activity_eventos">Eventos</string>
+    <string name="title_activity_canciones">Canciones</string>
+    <string name="title_activity_multimedia">Videos</string>
+    <string name="title_activity_detalle_evento">Detalle evento</string>
+    <string name="nombre_evento">Nombre evento:</string>
+    <string name="fecha_inicio">Fecha inicio:</string>
+    <string name="fecha_fin">Fecha fin:</string>
+    <string name="precio">Precio:</string>
+    <string name="direccion">Direccion:</string>
+    <string name="btn_expandir">Ver</string>
+    <string name="txt_pause">Pausar</string>
+    <string name="txt_stop">Parar</string>
+    <string name="txt_play">Reproducir</string>
+    <string name="load_player">Cargando reproductor</string>
+    
+    <string name="url_server">http://elplandelamariposa.vuelo247.com.ar</string>
+
+    <string name="mapa_key">AIzaSyBfKlDzRTvstc3jFshbU48PJNHam7wYvNA</string>
+    
+    <!-- Mapas estaticos -->
+    <string name="static_map_url">http://maps.googleapis.com/maps/api/staticmap?</string>
+    <string name="tipo_mapa">matype=roadmap</string>
+    
+    <string name="api_videos">http://elplandelamariposa.vuelo247.com.ar/restserver/api/videos/traer/format/json</string>
+    <string name="api_eventos">http://elplandelamariposa.vuelo247.com.ar/restserver/api/eventos/traer/format/json</string>
+    <string name="api_canciones">http://elplandelamariposa.vuelo247.com.ar/restserver/api/canciones/traer/format/json</string>
+
+</resources>
+

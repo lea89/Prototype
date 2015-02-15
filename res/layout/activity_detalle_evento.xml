@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.vuelo247.prototype.vistas.activity_detalle_evento">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                
+                <RelativeLayout
+                    android:id="@+id/tab_evento"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal|center_vertical">
+
+                    <TextView
+                        android:id="@+id/txt_nombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:text="@string/nombre_evento"/>
+
+                    <TextView
+                        android:id="@+id/txt_nombre_evento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@+id/txt_nombre"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="20dp"
+                        android:text="(nombre del evento)"/>
+
+                    <TextView
+                        android:id="@+id/txt_fecha_inicio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:layout_below="@+id/txt_nombre_evento"
+                        android:text="@string/fecha_inicio"/>
+
+                    <TextView
+                        android:id="@+id/txt_fecha_inicio_evento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@+id/txt_fecha_inicio"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="20dp"
+                        android:text="(fecha inicio del evento)"/>
+
+                    <TextView
+                        android:id="@+id/txt_fecha_fin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:layout_below="@+id/txt_fecha_inicio_evento"
+                        android:text="@string/fecha_fin"/>
+
+                    <TextView
+                        android:id="@+id/txt_fecha_fin_evento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@+id/txt_fecha_fin"
+                        android:layout_marginBottom="20dp"
+                        android:layout_alignParentRight="true"
+                        android:text="(fecha fin del evento)"/>
+
+                    <TextView
+                        android:id="@+id/txt_precio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:layout_below="@+id/txt_fecha_fin_evento"
+                        android:text="@string/precio"/>
+
+                    <TextView
+                        android:id="@+id/txt_precio_evento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@+id/txt_precio"
+                        android:layout_alignParentRight="true"
+                        android:text="(precio del evento)"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab_evento_lugar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_direccion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/direccion"/>
+                    
+                    <TextView
+                        android:id="@+id/txt_direccion_evento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_direccion"
+                        android:layout_alignParentRight="true"
+                        android:text="(direccion evento)"/>
+
+                    <fragment
+                        android:id="@+id/mapView"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/txt_direccion_evento"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab_conseguir_entradas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+					
+                    <com.vuelo247.prototype.librerias.ActionSlideExpandableListView
+						xmlns:android="http://schemas.android.com/apk/res/android"
+						android:id="@+id/list"
+						android:layout_height="fill_parent"
+						android:layout_width="fill_parent"/>
+
+                </LinearLayout>
+            </FrameLayout>
+         </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

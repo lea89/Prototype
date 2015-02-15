@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <RelativeLayout
+        android:id="@+id/relative_eventos"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/verde"
+        android:paddingLeft="20dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/img_eventos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_launcher">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_eventos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_eventos"
+            android:layout_alignBaseline="@id/img_eventos"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/blanco"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_marginLeft="20dp"
+            android:text="@string/eventos"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_multimedia"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/violeta"
+        android:paddingLeft="20dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/img_multimedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_launcher">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_multimedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_multimedia"
+            android:layout_alignBaseline="@id/img_multimedia"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/blanco"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_marginLeft="20dp"
+            android:text="@string/videos"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_canciones"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/naranja"
+        android:paddingLeft="20dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/img_canciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_launcher">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_canciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_canciones"
+            android:layout_alignBaseline="@id/img_canciones"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/blanco"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_marginLeft="20dp"
+            android:text="@string/canciones"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_contacto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/azul"
+        android:paddingLeft="20dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/img_contacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_launcher">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_contacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_contacto"
+            android:layout_alignBaseline="@id/img_contacto"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/blanco"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_marginLeft="20dp"
+            android:text="@string/contacto"/>
+    </RelativeLayout>
+
+</LinearLayout>
